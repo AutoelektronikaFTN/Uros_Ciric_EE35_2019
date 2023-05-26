@@ -1,3 +1,11 @@
+int Calculation(int a, int b)
+{
+if(a > b)
+return a - b;
+else
+return b - a;
+}
+
 #include <stdio.h>
 int main()
 {
@@ -5,9 +13,9 @@ int a = 3;
 int b = 8;
 int c;
 if(a > b)
-c = a - b;
+c = Calculation(a,b);
 else
-c = b - a;
+c = Calculation(b,a);
 printf("Result: %d\n", c);
 return 0;
 }
